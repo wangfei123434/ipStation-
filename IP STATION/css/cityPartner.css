@@ -1,0 +1,137 @@
+.ov_public {
+  padding-top: 6.3125rem;
+  box-sizing: border-box;
+}
+.cityPartner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: calc(100% - 13.625rem);
+}
+.cityPartner .partner_info {
+  position: relative;
+  z-index: 2;
+  background: rgba(9, 3, 27, 0.51);
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+.cityPartner .partner_info div {
+  width: 26.8125rem;
+  margin-left: 9.9375rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.cityPartner .partner_info div img {
+  display: block;
+  width: 26.8125rem;
+  -webkit-user-drag: none;
+}
+.cityPartner .partner_info div a {
+  display: block;
+  width: 11.125rem;
+  height: 2.5rem;
+  position: absolute;
+  bottom: 0.0625rem;
+  right: 1.0625rem;
+}
+.cityPartner .partner_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.cityPartner .partner_video video {
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.nextBox {
+  position: relative;
+  width: 100%;
+  height: calc(100% - 13.625rem);
+  overflow: hidden;
+}
+.nextBox .partner_info {
+  position: relative;
+  z-index: 2;
+  background: rgba(9, 3, 27, 0.81);
+  width: 100%;
+  height: 100%;
+}
+.nextBox .partner_info img {
+  display: block;
+  width: 29.3125rem;
+  -webkit-user-drag: none;
+  margin-left: 13.4375rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.nextBox .down_info {
+  position: relative;
+  z-index: 2;
+  background: rgba(9, 3, 27, 0.51);
+  width: 100%;
+  height: 100%;
+}
+.nextBox .down_info div {
+  margin-left: 11.3125rem;
+  width: 35.4375rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.nextBox .down_info div img {
+  display: block;
+  -webkit-user-drag: none;
+}
+.nextBox .down_info div a {
+  width: 12.5rem;
+  height: 3.75rem;
+  display: block;
+  position: absolute;
+}
+.nextBox .down_info div a.az_btn {
+  left: 0;
+  bottom: 0;
+}
+.nextBox .down_info div a.ios_btn {
+  left: 17.5rem;
+  bottom: 0;
+}
+.nextBox .partner_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.nextBox .partner_video video {
+  width: 1920px;
+  height: 1080px;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.nextBox .down_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.nextBox .down_video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

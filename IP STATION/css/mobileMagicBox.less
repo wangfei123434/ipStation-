@@ -1,0 +1,189 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	font-size: 0.12rem;
+	overflow-x: hidden;
+	.content{
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background: url(https://static.wanou1.com/website/image/mobileImage/magicBox_bigBg.png) no-repeat;
+		background-size: 100% 100%;
+		.header{
+			color: #fff;
+			display: flex;
+			justify-content: space-between;
+			height: 60/100rem;
+			line-height: 60/100rem;
+			.header_left{
+				font-family: PingFang SC;
+				font-size: 15/100rem;
+				margin-left: 20/100rem;
+				a{
+					display: block;
+					color: #fff;
+					span{
+						border: solid #fff;
+						border-width: 0 1/100rem 1/100rem 0;
+						display: inline-block;
+						padding: 5/100rem;
+						transform: rotate(135deg);
+						-webkit-transform: rotate(135deg);
+						margin-right: 3/100rem;
+					}
+				}
+			}
+			.header_right{
+				position: fixed;
+				right: 10/100rem;
+				margin-top: 17/100rem;
+				margin-right: 20/100rem;
+				z-index: 102;
+				height:  22/100rem;
+				width: 28/100rem;
+				span{
+					display: block;
+					width: 28/100rem;
+					height: 3/100rem;
+					background-color: #fff;
+					position: absolute;
+					left: 0;
+					top:50%;
+					transform: translate(0,-50%);
+					transform-origin: center center;
+					transition: all .2s ease;
+					&:first-child{
+						top:0;
+						transform: translate(0,0%);
+					}
+					&:last-child{
+						top:auto;
+						bottom:0;
+						transform:rotate(0deg) translate(0,0%);
+						transition: all .2s ease;
+					}
+				}
+				
+			}
+			.header_right.active{
+				transform:translate(0,-3/100rem);
+				#span1{
+					transform:rotate(45deg) translate(0,0%);
+					top:50%;
+				}
+				#span3{
+					transform:rotate(135deg) translate(0,0%);
+					top:50%;
+					bottom:auto;
+				}
+				#span2{
+					opacity:0;
+				}
+			}
+		}
+		.titleImg{
+			width: 200/100rem;
+			height: 100/100rem;
+			margin: 30/100rem 0 20/100rem 30/100rem;
+			img{
+				height: 100%;
+				width: 100%;
+			}
+		}
+		.contactWay_img{
+			width: 80%;
+			background-color: #ffd800;
+			text-indent: 20/100rem;
+			height: 35/100rem;
+			line-height: 35/100rem;
+			// margin-left: 5/100rem;
+			font-size: 12/100rem;
+		}
+		.introduce{
+			width: 80%;
+			margin: 50/100rem auto;
+			color: #fff;
+		}
+	}
+	.nav{
+		width: 80%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.8);
+		z-index: 2;
+		position: fixed;
+		right: -80%;
+		// left: 375/100rem;
+		top: 0;
+		color: #fff;
+		// display: none;
+		ul{
+			margin-top: 70/100rem;
+			width: 40%;
+			margin-left: 110/100rem;
+			position: relative;
+			li{
+				margin-bottom: 40/100rem;
+				text-align: right;
+				font-size: 12/100rem;
+				a{
+					color: #fff;
+					font-size: 12/100rem;
+				}
+			}
+			.onLine{
+				position: absolute;
+				bottom: 0rem;
+				left: -100/100rem;
+				// display: none;
+				opacity: 0;
+				.tm,.jd{
+					width: 80/100rem;
+					height: 60/100rem;
+					margin-top: 20/100rem;
+					a{
+						display: block;
+						color: #fff;
+						font-size: 10/100rem;
+						img{
+							width: 30/100rem;
+							height: 30/100rem;
+							margin-left: 25/100rem;
+						}
+						p{
+							text-align: center;
+							margin-top: 5/100rem;
+						}
+					}
+				}
+				.xcx{
+					margin-top: 20/100rem;
+					font-size: 10/100rem;
+					img{
+						width: 50/100rem;
+						height: 50/100rem;
+						margin-left: 15/100rem;
+					}
+					p{
+						text-align: center;
+						margin-top: 5/100rem;
+					}
+				}
+			}
+			.line{
+				width: 1px;
+				// height: 180/100rem;
+				background-color: #fff;
+				position: absolute;
+				top: 285/100rem;
+			}
+		}
+		
+	}
+	
+	
+
+}

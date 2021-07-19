@@ -1,0 +1,306 @@
+@charset "utf-8";
+/* CSS Document */
+html{ overflow-x:hidden; overflow-y:auto;}
+*{margin:0;padding:0;}
+ul,ol,li,dl,dd,dt{ list-style-type:none; line-height:normal;}
+body{max-width:1920px;margin:0 auto;width:100%;min-width: 1200px;}
+body, button, input, select, textarea{ font-family:'Microsoft yahei' ,Arial; font-size:12px;}
+code, kbd, pre, samp { font-family:'Microsoft yahei' ,Arial;}
+address, caption, cite, code, dfn, em, th, var {font-style: normal;font-weight: normal;}
+a{ text-decoration:none;-webkit-tap-highlight-color:rgba(0, 0, 0, 0); -webkit-tap-highlight-color: transparent;}
+img{border:0; max-width:100%;}
+table { border-collapse: collapse; border-spacing: 0; }
+h1,h2,h3,h4,h5,h6{ margin:0; font-weight:normal; font-family:'Microsoft yahei' ,Arial;}
+h1{font-size:36px;}
+h2{font-size:24px;}
+h3{font-size:22px;}
+h4{font-size:18px;}
+h5{font-size:14px;}
+h6{font-size:12px;}
+input,table,tr,td{ margin:0; padding:0; border:none;}
+button,table{ border:none; background:none; margin:0; padding:0;}
+select{ margin:0; padding:0; font-family:'Microsoft yahei' ,Arial;}
+textarea{ resize:none; outline:0;}
+input{ outline:0;}
+.fl{float: left;}
+.fr{float: right;}
+.clearfix:after{content: "";display: block;clear: both;height: 0px;}
+@font-face{
+    font-family: 'ht';
+    src : url('../font/ht.otf');
+}
+@font-face{
+    font-family: 'Noto Sans SC';
+    src : url('../font/ht2.otf');
+}
+.public {
+    .p_header {
+        height: 80/16rem;
+        position: fixed;
+        top:0;
+        left: 0;
+        margin: 0 auto;
+        width: 100%;
+        z-index: 1000;
+        
+        .header_wrap {
+            height: 80/16rem;
+            position: relative;
+            display: flex;
+            width:100%;
+            .logo {
+                width: 108/16rem;
+                position: relative;
+                z-index: 10;
+                height: 112/16rem;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                margin-left: 134/16rem;
+                .logo-log {
+                    width: 108/16rem;
+                    height: 90/16rem;
+                    background-color: rgba(255,220,42,1);
+                    position: relative;
+                    img {
+                        display: block;
+                        width: 80%;
+						margin:0 auto 5/16rem;
+                    }
+                }
+                .logo-bt {
+                    width: 100%;
+                    height: 11/16rem;
+                    background-color: rgba(255,220,42,1);
+                    display: block;
+                }
+            }
+            .logo_ny{
+                height: 101/16rem;
+                .logo-log {
+                    height: 80/16rem;
+					img {
+					    display: block;
+					    width: 70%;
+						margin:0 auto 5/16rem;
+					}
+                }
+            }
+            .list {
+                display: block;
+                padding:0 0 0 250/16rem;
+                width: 1678/16rem;
+                box-sizing: border-box;
+                position: relative;
+                margin:0;
+                font-size: 0;
+                text-align: left;
+                white-space: nowrap;
+                li {
+                    cursor: pointer;
+                    text-align: center;
+                    margin:0 29/16rem;
+                    line-height: 80/16rem;
+                    display: inline-block;
+                    >a {
+                        color: #fff;
+                        font-size: 20/16rem;
+                        font-family:ht;
+                    }
+                    &:hover>a{
+                        color: rgba(255,220,42,1);
+                        transition: all .36s ease;
+                    }
+					
+                }
+				li.active a{
+                    color: rgba(255,220,42,1);
+				}
+                &:before{
+                    display: block;
+                    height: 1px;
+                    background-color: rgba(255,220,42,1);
+                    transition: all .36s ease;
+                    position: absolute;
+                    bottom:-10/16rem;
+                    left: 0;
+                    content:'';
+                    width: 0;
+                }
+                &:hover:before{
+                    width: 100%;
+                }
+				
+                #shop{
+                    position: relative;
+                    img{
+                        height: 10/16rem;
+                        transition: all .2s ease-in;
+                    }
+                    .shop_box{
+                        position: absolute;
+                        background: #242424;
+                        z-index: 99;
+                        width: 180/16rem;
+						top: 68/16rem;
+                        left: 50%;
+                        display: none;
+                        padding: 0 28/16rem;
+                        transform:translate(-50%,0);
+						p:first-child{
+							margin-top: 10/16rem;
+							border-bottom: 1px solid #ccc;
+						}
+						p:nth-of-type(2){
+							border-bottom: 1px solid #ccc;
+						}
+                        p{
+                            text-align: center;
+                            cursor: pointer;
+                            padding: 10/16rem;
+                            color: #fff;
+                            font-size: 16/16rem;
+							font-family:ht;
+                            a{
+                                color:#fff;
+                                &:hover{
+                                    color: rgba(255,220,42,1);
+                                    transition: all .36s ease;
+                                }
+                            }
+							img{
+								width: 126/16rem;
+								height: 126/16rem;
+                                display: block;
+                                margin:10/16rem auto 0;
+                            }
+                        }
+                    }
+                    &:hover{
+                        >a>img{
+                            transform: rotate(-180deg);
+                        }
+                        .shop_box{
+                            display: block
+                        }
+                    }
+					
+                }
+				li:last-of-type{
+					position: relative;
+				}
+				
+            }
+			
+        }
+    }
+    .active{
+        background: rgba(36,36,36,0);
+    }
+    .p_header.ny_p_header{
+        background: rgba(36,36,36,1);
+        height: 101/16rem;
+    }
+	// 导航吸顶样式
+    .xid{
+		position: fixed;
+		left: 0;
+		right: 0;
+        z-index: 99999;
+        background-image:url(https://static.wanou1.com/website/image/pcImage/wyf_h_bg.png);
+		background-position: center center;
+		background-size: 100% 100%;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+    .ipStation_img{
+        padding-top: 101/16rem;
+        width: 100%;
+    }
+	
+    .p_footer {
+        height: 218/16rem;
+        display: flex;
+        align-items: center;
+        background: #383838;
+        position: relative;
+        box-sizing: border-box;
+        padding: 50/16rem 0;
+        .p_wrap {
+            width: 1200/16rem;
+            margin: 0 auto;
+            display: flex;
+            .p_logo{
+                width: 98/16rem;
+                margin: 27/16rem 147/16rem 21/16rem 117/16rem;
+                img{
+                    display: block;
+                    width: 100%;
+                }
+            }
+
+            .txt {
+                flex:1;
+                .t_top{
+                    display: flex;
+                    a{
+                        width: 29/16rem;
+                        height: 29/16rem;
+                        background-color: #fff;
+                        border-radius: 50%;
+                        padding: 4.5/16rem;
+                        box-sizing: border-box;
+                        margin-right: 14/16rem;
+                        img{
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+					.wx_a{
+                        position: relative;
+                        cursor: pointer;
+                        .wx_qrCode{
+                            position: absolute;
+                            width: 126/16rem;
+                            height: 126/16rem;
+                            background: url(http://static.wanou1.com/website/image/public/qr_iconBg.png) no-repeat center top;
+                            background-size: contain;
+                            left: 50%;
+                            bottom: 105%;
+                            transform:translate(-50%,0);
+                            opacity: 0;
+                            transition: all .2s ease;
+							z-index: 10;
+                            img{
+                                height: 88%;
+                                width: 88%;
+                                margin:3% 6%;
+                            }
+                        }
+                        &:hover{
+                            .wx_qrCode{
+                                opacity: 1;
+                            }
+                        }
+					}
+                }
+                .t_bottom{
+                    margin-top: 30/16rem;
+                    p{
+                        line-height: 30/16rem;
+                        font-size: 14/16rem;
+                        font-family:ht;
+                        color: #fff;
+                        a{
+                            color: #fff;
+                            &:hover{
+                                text-decoration: underline;
+                                color: rgba(255,220,42,1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,92 @@
+body .company_introduction {
+  width: 100%;
+  margin: 6.3125rem auto 0;
+  position: relative;
+}
+body .company_introduction .company_video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+body .company_introduction .company_video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+body .company_introduction .company_content {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 28.6875rem 0 10.6875rem 0;
+}
+body .company_introduction .img_div {
+  width: 17.8125rem;
+  position: absolute;
+  top: 4.375rem;
+  left: 22.5rem;
+}
+body .company_introduction .img_div img {
+  width: 100%;
+  display: block;
+}
+body .company_introduction .text_div {
+  padding: 0 18.625rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+body .company_introduction .text_div img {
+  width: 14.875rem;
+  margin: 0 auto 2.25rem;
+  display: block;
+}
+body .company_introduction .text_div p {
+  text-indent: 2em;
+  margin-bottom: 2.125rem;
+  font-size: 1.125rem;
+  color: #000;
+  line-height: 2.125rem;
+  font-family: ht;
+}
+body .development_direction {
+  height: 44.375rem;
+  width: 100%;
+  padding-top: 1.25rem;
+  background: url(https://static.wanou1.com/website/image/pcImage/wyf_dir_bg.png) no-repeat center top;
+  background-size: cover;
+  box-sizing: border-box;
+  padding-top: 5rem;
+}
+body .development_direction .dir_title {
+  width: 11.4375rem;
+  margin: 0 auto 11.4375rem;
+  display: block;
+}
+body .development_direction .smile {
+  width: 56.8125rem;
+  margin: 0 auto;
+  display: block;
+}
+body .cooperation {
+  padding: 8.625rem 0 3.5rem 0;
+}
+body .cooperation .item {
+  width: 73.125rem;
+  margin: 0 auto 8.625rem;
+}
+body .cooperation .item .dir_title {
+  width: 13.875rem;
+  margin: 0 auto 3.625rem;
+  display: block;
+}
+body .cooperation .item .pp_pic {
+  width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+body .cooperation .item:last-child {
+  margin: 0 auto;
+}

@@ -1,0 +1,167 @@
+.ipStation_img {
+  width: 100%;
+}
+.ipStation_img img {
+  height: 100%;
+  display: block;
+  height: auto;
+}
+.contentBox {
+  position: relative;
+}
+.contentBox > a {
+  position: absolute;
+  top: -6.3125rem;
+}
+.contentBox .skip1 {
+  padding: 5.0625rem 0;
+}
+.contentBox .skip1 .img_small_content {
+  padding: 6.25rem 0;
+}
+.contentBox .skip2 {
+  padding: 4rem 0;
+}
+.contentBox .skip2 .img_small_content {
+  padding: 1.875rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.contentBox .skip3 {
+  padding: 4rem 0 2rem 0;
+}
+.contentBox .skip3 .img_small_content {
+  padding: 5.0625rem 0 3.25rem 0;
+}
+.contentBox .skip4 {
+  padding: 5rem 0;
+}
+.contentBox .skip4 .img_small_content {
+  padding: 5.625rem 0 2rem 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.contentBox .ipStation_item {
+  width: 66.875rem;
+  margin: 0 auto;
+  position: relative;
+}
+.contentBox .ipStation_item .skip1_title {
+  width: 9.75rem;
+  display: block;
+  margin: 0 auto;
+}
+.contentBox .ipStation_item .skip1_title img {
+  width: 100%;
+  display: block;
+}
+.contentBox .ipStation_item .skip2_title {
+  width: 19.6875rem;
+  display: block;
+  margin: 0 auto;
+}
+.contentBox .ipStation_item .skip2_title img {
+  width: 100%;
+  display: block;
+}
+.contentBox .ipStation_item .skip3_title {
+  width: 18.125rem;
+  display: block;
+  margin: 0 auto;
+}
+.contentBox .ipStation_item .skip3_title img {
+  width: 100%;
+  display: block;
+}
+.contentBox .ipStation_item .skip4_title {
+  width: 19.875rem;
+  display: block;
+  margin: 0 auto;
+}
+.contentBox .ipStation_item .skip4_title img {
+  width: 100%;
+  display: block;
+}
+.contentBox .ipStation_item .img_small_content {
+  width: 100%;
+  position: relative;
+}
+.contentBox .ipStation_item .img_small_content .content_right .content_right_item {
+  margin-bottom: 1.5rem;
+}
+.contentBox .ipStation_item .img_small_content .content_right .content_right_item .num {
+  width: 16.6875rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-align: left;
+  color: #000000;
+  padding-bottom: 0.625rem;
+  border-bottom: 0.0625rem solid #E5472E;
+  font-family: 'Noto Sans SC';
+}
+.contentBox .ipStation_item .img_small_content .content_right .content_right_item .english_text {
+  margin-top: 0.5625rem;
+  line-height: 1.25rem;
+  color: #c2c2c2;
+  font-size: 1rem;
+  font-family: ht;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+.contentBox .ipStation_item .img_small_content .content_right .content_right_item .china_text {
+  margin-top: 1.25rem;
+  width: 27.1875rem;
+  font-size: 0.875rem;
+  line-height: 1.875rem;
+  font-family: ht;
+  color: #444444;
+}
+.contentBox .ipStation_item .img_small_content .skip1_img_big {
+  position: absolute;
+  width: 20.6875rem;
+  top: 50%;
+  right: 2.1875rem;
+  transform: translate(0, -50%);
+}
+.contentBox .ipStation_item .img_small_content .skip1_img_big img {
+  display: block;
+}
+.contentBox .ipStation_item .img_small_content .skip2_img_big {
+  position: absolute;
+  width: 30.5625rem;
+  top: 50%;
+  left: -4.9375rem;
+  transform: translate(0, -50%);
+}
+.contentBox .ipStation_item .img_small_content .skip2_img_big img {
+  display: block;
+}
+.contentBox .ipStation_item .img_small_content .skip3_img_big {
+  position: absolute;
+  width: 36rem;
+  top: 40%;
+  right: -11.5625rem;
+  transform: translate(0, -50%);
+}
+.contentBox .ipStation_item .img_small_content .skip3_img_big img {
+  display: block;
+}
+.contentBox .ipStation_item .skip4_img_big {
+  position: absolute;
+  width: 52.5625rem;
+  bottom: 0%;
+  left: -11.625rem;
+}
+.contentBox .ipStation_item .skip4_img_big img {
+  display: block;
+}
+.contentBox:nth-of-type(odd) {
+  background-color: #f6f6f6;
+}
+.contentBox:nth-of-type(odd) .img_small {
+  padding-top: 1.25rem;
+}
+.contentBox:nth-of-type(4) .img_big {
+  height: 31.5rem !important;
+}

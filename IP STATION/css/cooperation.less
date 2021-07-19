@@ -1,0 +1,70 @@
+.cooperation_img{
+	display: block;
+	width: 100%;
+	margin: 101/16rem auto 0;
+	img{
+		display: block;
+	}
+
+}
+.coop_list{
+	width: 100%;
+	height: auto;
+	.item{
+		display: flex;
+		box-sizing: border-box;
+		width: 100%;
+		align-items: center;
+		padding: 54/16rem 0 70/16rem 142/16rem;
+		background-color:#f6f6f6;
+		overflow: hidden;
+		.left{
+			width: 300/16rem;
+			height: 300/16rem;
+			transform:translate(-100%,100%);
+			opacity: 0;
+		}
+		.right{
+			flex: 1;
+			margin-left: 188/16rem;
+			transform:translate(300/16rem,100%);
+			opacity: 0;
+			h1{
+				font-size: 48/16rem;
+				color: #000;
+				line-height: 58/16rem;
+                font-family: 'Noto Sans SC'; 
+                font-weight: 800;  
+			}
+			h2{
+				font-size: 20/16rem;
+				color: #000;
+				font-weight: lighter;
+				line-height: 20/16rem;
+				margin-top: 8/16rem;
+				font-family: ht;
+			}
+			p{
+				font-size: 16/16rem;
+				color: #7B7B7B;
+				font-weight: lighter;
+				line-height: 30/16rem;
+				margin-top:24/16rem;
+				min-height: 48/16rem;
+				font-family: ht;
+			}
+			h6{
+				font-size: 20/16rem;
+				color: #000;
+				font-weight: lighter;
+				line-height: 24/16rem;
+				margin-top: 60/16rem;
+				font-family: ht;
+			}
+		}
+		&:nth-child(even){
+			background-color: #fff;
+		}
+	}
+	
+}

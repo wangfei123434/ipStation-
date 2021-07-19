@@ -1,0 +1,394 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+li,
+dl,
+dd,
+dt {
+  list-style-type: none;
+  line-height: normal;
+}
+body {
+  max-width: 1920px;
+  margin: 0 auto;
+  width: 100%;
+  min-width: 1200px;
+}
+body,
+button,
+input,
+select,
+textarea {
+  font-family: 'Microsoft yahei', Arial;
+  font-size: 12px;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: 'Microsoft yahei', Arial;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+img {
+  border: 0;
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: normal;
+  font-family: 'Microsoft yahei', Arial;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 24px;
+}
+h3 {
+  font-size: 22px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+input,
+table,
+tr,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+button,
+table {
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+select {
+  margin: 0;
+  padding: 0;
+  font-family: 'Microsoft yahei', Arial;
+}
+textarea {
+  resize: none;
+  outline: 0;
+}
+input {
+  outline: 0;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  height: 0px;
+}
+@font-face {
+  font-family: 'ht';
+  src: url('https://static.wanou1.com/website/font/ht.otf');
+}
+@font-face {
+  font-family: 'Noto Sans SC';
+  src: url('https://static.wanou1.com/website/font/ht2.otf');
+}
+.public .p_header {
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1000;
+}
+.public .p_header .header_wrap {
+  height: 5rem;
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.public .p_header .header_wrap .logo {
+  width: 6.75rem;
+  position: relative;
+  z-index: 10;
+  height: 7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-left: 8.375rem;
+}
+.public .p_header .header_wrap .logo .logo-log {
+  width: 6.75rem;
+  height: 5.625rem;
+  background-color: #ffdc2a;
+  position: relative;
+}
+.public .p_header .header_wrap .logo .logo-log img {
+  display: block;
+  width: 80%;
+  margin: 0 auto 0.3125rem;
+}
+.public .p_header .header_wrap .logo .logo-bt {
+  width: 100%;
+  height: 0.6875rem;
+  background-color: #ffdc2a;
+  display: block;
+}
+.public .p_header .header_wrap .logo_ny {
+  height: 6.3125rem;
+}
+.public .p_header .header_wrap .logo_ny .logo-log {
+  height: 5rem;
+}
+.public .p_header .header_wrap .logo_ny .logo-log img {
+  display: block;
+  width: 70%;
+  margin: 0 auto 0.3125rem;
+}
+.public .p_header .header_wrap .list {
+  display: block;
+  padding: 0 0 0 15.625rem;
+  width: 104.875rem;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
+  font-size: 0;
+  text-align: left;
+  white-space: nowrap;
+}
+.public .p_header .header_wrap .list li {
+  cursor: pointer;
+  text-align: center;
+  margin: 0 1.8125rem;
+  line-height: 5rem;
+  display: inline-block;
+}
+.public .p_header .header_wrap .list li > a {
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: ht;
+}
+.public .p_header .header_wrap .list li:hover > a {
+  color: #ffdc2a;
+  transition: all 0.36s ease;
+}
+.public .p_header .header_wrap .list li.active a {
+  color: #ffdc2a;
+}
+.public .p_header .header_wrap .list:before {
+  display: block;
+  height: 1px;
+  background-color: #ffdc2a;
+  transition: all 0.36s ease;
+  position: absolute;
+  bottom: -0.625rem;
+  left: 0;
+  content: '';
+  width: 0;
+}
+.public .p_header .header_wrap .list:hover:before {
+  width: 100%;
+}
+.public .p_header .header_wrap .list #shop {
+  position: relative;
+}
+.public .p_header .header_wrap .list #shop img {
+  height: 0.625rem;
+  transition: all 0.2s ease-in;
+}
+.public .p_header .header_wrap .list #shop .shop_box {
+  position: absolute;
+  background: #242424;
+  z-index: 99;
+  width: 11.25rem;
+  top: 4.25rem;
+  left: 50%;
+  display: none;
+  padding: 0 1.75rem;
+  transform: translate(-50%, 0);
+}
+.public .p_header .header_wrap .list #shop .shop_box p:first-child {
+  margin-top: 0.625rem;
+  border-bottom: 1px solid #ccc;
+}
+.public .p_header .header_wrap .list #shop .shop_box p:nth-of-type(2) {
+  border-bottom: 1px solid #ccc;
+}
+.public .p_header .header_wrap .list #shop .shop_box p {
+  text-align: center;
+  cursor: pointer;
+  padding: 0.625rem;
+  color: #fff;
+  font-size: 1rem;
+  font-family: ht;
+}
+.public .p_header .header_wrap .list #shop .shop_box p a {
+  color: #fff;
+}
+.public .p_header .header_wrap .list #shop .shop_box p a:hover {
+  color: #ffdc2a;
+  transition: all 0.36s ease;
+}
+.public .p_header .header_wrap .list #shop .shop_box p img {
+  width: 7.875rem;
+  height: 7.875rem;
+  display: block;
+  margin: 0.625rem auto 0;
+}
+.public .p_header .header_wrap .list #shop:hover > a > img {
+  transform: rotate(-180deg);
+}
+.public .p_header .header_wrap .list #shop:hover .shop_box {
+  display: block;
+}
+.public .p_header .header_wrap .list li:last-of-type {
+  position: relative;
+}
+.public .active {
+  background: rgba(36, 36, 36, 0);
+}
+.public .p_header.ny_p_header {
+  background: #242424;
+  height: 6.3125rem;
+}
+.public .xid {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-image: url(https://static.wanou1.com/website/image/pcImage/wyf_h_bg.png);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.public .ipStation_img {
+  padding-top: 6.3125rem;
+  width: 100%;
+}
+.public .p_footer {
+  height: 13.625rem;
+  display: flex;
+  align-items: center;
+  background: #383838;
+  position: relative;
+  box-sizing: border-box;
+  padding: 3.125rem 0;
+}
+.public .p_footer .p_wrap {
+  width: 75rem;
+  margin: 0 auto;
+  display: flex;
+}
+.public .p_footer .p_wrap .p_logo {
+  width: 6.125rem;
+  margin: 1.6875rem 9.1875rem 1.3125rem 7.3125rem;
+}
+.public .p_footer .p_wrap .p_logo img {
+  display: block;
+  width: 100%;
+}
+.public .p_footer .p_wrap .txt {
+  flex: 1;
+}
+.public .p_footer .p_wrap .txt .t_top {
+  display: flex;
+}
+.public .p_footer .p_wrap .txt .t_top a {
+  width: 1.8125rem;
+  height: 1.8125rem;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 0.28125rem;
+  box-sizing: border-box;
+  margin-right: 0.875rem;
+}
+.public .p_footer .p_wrap .txt .t_top a img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.public .p_footer .p_wrap .txt .t_top .wx_a {
+  position: relative;
+  cursor: pointer;
+}
+.public .p_footer .p_wrap .txt .t_top .wx_a .wx_qrCode {
+  position: absolute;
+  width: 7.875rem;
+  height: 7.875rem;
+  background: url(http://static.wanou1.com/website/image/public/qr_iconBg.png) no-repeat center top;
+  background-size: contain;
+  left: 50%;
+  bottom: 105%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: all 0.2s ease;
+  z-index: 10;
+}
+.public .p_footer .p_wrap .txt .t_top .wx_a .wx_qrCode img {
+  height: 88%;
+  width: 88%;
+  margin: 3% 6%;
+}
+.public .p_footer .p_wrap .txt .t_top .wx_a:hover .wx_qrCode {
+  opacity: 1;
+}
+.public .p_footer .p_wrap .txt .t_bottom {
+  margin-top: 1.875rem;
+}
+.public .p_footer .p_wrap .txt .t_bottom p {
+  line-height: 1.875rem;
+  font-size: 0.875rem;
+  font-family: ht;
+  color: #fff;
+}
+.public .p_footer .p_wrap .txt .t_bottom p a {
+  color: #fff;
+}
+.public .p_footer .p_wrap .txt .t_bottom p a:hover {
+  text-decoration: underline;
+  color: #ffdc2a;
+}

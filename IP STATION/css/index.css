@@ -1,0 +1,898 @@
+.index {
+  width: 100%;
+}
+.index-swiper {
+  width: 100%;
+  height: 67.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.index-swiper .swiper-wrapper .slide1 {
+  position: relative;
+}
+.index-swiper .swiper-pagination {
+  bottom: 2.5rem;
+  left: 50%;
+  width: 21px;
+  transform: translate(-50%, 0);
+  position: absolute;
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.index-swiper .swiper-pagination .my-bullet {
+  width: 3.25rem;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin: 0 0.75rem;
+  transition: all 0.36s ease;
+  display: block;
+}
+.index-swiper .swiper-pagination .my-bullet-active {
+  background-color: #eaa700;
+}
+.index-swiper .banner-funs {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 31rem;
+  height: 21.75rem;
+  z-index: 10;
+  transition: all 0.36s ease;
+  transform: translate3d(0, 24.9375rem, 0);
+}
+.index-swiper .banner-funs img {
+  display: block;
+  width: 100%;
+}
+.index_container {
+  margin: 0 auto;
+  width: 100%;
+}
+.index_container .index_about {
+  height: 85.625rem;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+}
+.index_container .index_about .index_about_bg {
+  width: 106.125rem;
+  height: 14.8125rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -83.875rem;
+  top: 2.3125rem;
+}
+.index_container .index_about .index_about_bg img {
+  display: block;
+  width: 100%;
+}
+.index_container .index_about .index_about_title {
+  width: 11.25rem;
+  height: 5rem;
+  display: block;
+  margin: 0 auto 3.625rem;
+  padding-top: 8.8125rem;
+  transition: all 0.16s ease;
+  position: relative;
+  z-index: 3;
+  transform-origin: 50% 100%;
+}
+.index_container .index_about .index_about_title img {
+  display: block;
+  width: 100%;
+}
+.index_container .index_about .index_about_title:hover {
+  transform: scale(1.1);
+}
+.index_container .index_about .index_about_pstation {
+  width: 31rem;
+  height: 4.1875rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -48.5625rem;
+  top: 22.9375rem;
+}
+.index_container .index_about .index_about_pstation img {
+  display: block;
+  width: 100%;
+}
+.index_container .index_about .index_about_pstation2 {
+  width: 53rem;
+  height: 7.375rem;
+  position: absolute;
+  left: 50%;
+  margin-left: 20.625rem;
+  top: 24.1875rem;
+}
+.index_container .index_about .index_about_pstation2 img {
+  display: block;
+  width: 100%;
+}
+.index_container .index_about .about_text {
+  max-width: 60.3125rem;
+  font-size: 1.25rem;
+  font-family: ht;
+  line-height: 2.125rem;
+  color: #000000;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  text-indent: 2.5rem;
+}
+.index_container .index_about .index_learn_more {
+  display: inline-block;
+  width: auto;
+  height: 1.875rem;
+  margin: 3.125rem auto 0;
+  font-size: 0;
+}
+.index_container .index_about .index_learn_more span {
+  color: #000;
+  font-size: 0.875rem;
+  font-style: normal;
+  display: block;
+  float: left;
+  line-height: 1.875rem;
+  transition: all 0.36s ease;
+  font-family: ht;
+}
+.index_container .index_about .index_learn_more div {
+  display: block;
+  width: 0.625rem;
+  height: 0.625rem;
+  position: relative;
+  margin: 0.625rem 0.3125rem;
+  float: left;
+  box-sizing: border-box;
+}
+.index_container .index_about .index_learn_more div:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  transition: all 0.36s ease;
+}
+.index_container .index_about .index_learn_more div:after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  transition: all 0.36s ease;
+}
+.index_container .index_about .index_learn_more:hover span {
+  color: #eaa700;
+}
+.index_container .index_about .index_learn_more:hover div:before,
+.index_container .index_about .index_learn_more:hover div:after {
+  background-color: #eaa700;
+}
+.index_container .index_about .video_box {
+  width: 65.3125rem;
+  height: 49rem;
+  position: relative;
+  margin: 4rem auto 0;
+}
+.index_container .index_about .video_box img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  width: 8.625rem;
+  height: 8.625rem;
+}
+.index_container .index_about .video_box video {
+  width: 100%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+  object-fit: cover;
+}
+.index_container .index_funs {
+  width: 100%;
+  height: 50rem;
+  background-color: #eaa700;
+  box-sizing: border-box;
+  padding-top: 4.375rem;
+  position: relative;
+  overflow: hidden;
+}
+.index_container .index_funs .index_funs_title {
+  width: 18.9375rem;
+  height: 13.0625rem;
+  overflow: hidden;
+  transition: all 0.16s ease;
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+.index_container .index_funs .index_funs_title img {
+  display: block;
+  width: 100%;
+}
+.index_container .index_funs .index_funs_title:hover {
+  transform: scale(1.2);
+}
+.index_container .index_funs .index_funs_dot {
+  width: 94.25rem;
+  display: flex;
+  position: absolute;
+  z-index: 4;
+  align-items: flex-end;
+  bottom: 6.625rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 14.6875rem;
+}
+.index_container .index_funs .index_funs_dot li {
+  position: relative;
+  width: 100%;
+  transition: all 0.16s ease;
+  height: 14.6875rem;
+}
+.index_container .index_funs .index_funs_dot li:first-child {
+  background-color: #B1C92C;
+}
+.index_container .index_funs .index_funs_dot li:first-child img {
+  width: 10.5625rem;
+  position: absolute;
+  top: 2.75rem;
+  right: 7.1875rem;
+  display: block;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+.index_container .index_funs .index_funs_dot li:first-child div {
+  padding-right: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.2s ease;
+  padding-top: 6.25rem;
+}
+.index_container .index_funs .index_funs_dot li:first-child div h2 {
+  color: #fff;
+  text-align: right;
+}
+.index_container .index_funs .index_funs_dot li:first-child div p {
+  color: #fff;
+  text-align: right;
+}
+.index_container .index_funs .index_funs_dot li:first-child:hover {
+  height: 22.625rem;
+  background-color: #f56e11;
+}
+.index_container .index_funs .index_funs_dot li:first-child:hover img {
+  right: 9.5625rem;
+  top: -0.75rem;
+  width: 23.125rem;
+}
+.index_container .index_funs .index_funs_dot li:first-child:hover div {
+  left: 0;
+  opacity: 1;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li {
+  background-color: #86ABB4;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li img {
+  width: 14.625rem;
+  position: absolute;
+  top: 1.75rem;
+  right: 4.4375rem;
+  display: block;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li div {
+  padding-right: 3.125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.2s ease;
+  padding-bottom: 1.875rem;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li div h2 {
+  color: #fff;
+  text-align: right;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li div p {
+  color: #fff;
+  text-align: right;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li:hover {
+  height: 22.625rem;
+  background-color: #0015FF;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li:hover img {
+  right: 1.5625rem;
+  top: 1.5rem;
+  width: 25rem;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li:hover div {
+  left: 0;
+  opacity: 1;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li {
+  background-color: #765F3C;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li img {
+  width: 9.25rem;
+  position: absolute;
+  top: 0.46875rem;
+  right: 5.875rem;
+  display: block;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li div {
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  left: 0%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.2s ease;
+  padding-bottom: 1.25rem;
+  overflow: hidden;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li div h2 {
+  color: #000;
+  text-align: center;
+  position: relative;
+  left: -100%;
+  transition: all 0.2s ease;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li div p {
+  color: #000;
+  text-align: center;
+  position: relative;
+  transition: all 0.2s ease;
+  left: -100%;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li:hover {
+  height: 22.625rem;
+  background-color: #FEBB00;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li:hover img {
+  right: 4.375rem;
+  top: -1.875rem;
+  width: 13.25rem;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li:hover div {
+  left: 0;
+  opacity: 1;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li:hover div h2 {
+  left: 0%;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li:hover div p {
+  left: 0%;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li {
+  background-color: #72373B;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li img {
+  width: 13.5rem;
+  position: absolute;
+  bottom: 0rem;
+  left: 6.3125rem;
+  display: block;
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li div {
+  padding-left: 1.375rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  left: 0%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.2s ease;
+  padding-bottom: 0.9375rem;
+  overflow: hidden;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li div h2 {
+  color: #fff;
+  text-align: left;
+  position: relative;
+  left: -100%;
+  transition: all 0.2s ease;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li div p {
+  color: #fff;
+  text-align: left;
+  position: relative;
+  transition: all 0.2s ease;
+  text-indent: 1.625rem;
+  left: -100%;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li:hover {
+  height: 22.625rem;
+  background-color: #FF6925;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li:hover img {
+  left: 6.3125rem;
+  width: 24.375rem;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li:hover div {
+  left: 0;
+  opacity: 1;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li:hover div h2 {
+  left: 0%;
+}
+.index_container .index_funs .index_funs_dot li:first-child + li + li + li:hover div p {
+  left: 0%;
+}
+.index_container .index_funs .index_funs_dot li div {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.index_container .index_funs .index_funs_dot li div h2 {
+  font-size: 1.75rem;
+  line-height: 1.9375rem;
+  font-family: 'Noto Sans SC';
+  font-weight: 800;
+}
+.index_container .index_funs .index_funs_dot li div p {
+  font-weight: lighter;
+  font-size: 1.25rem;
+  line-height: 1.9375rem;
+  margin-top: 0.625rem;
+  font-family: ht;
+}
+.index_container .index_funs .index_funs_bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.index_container .index_funs .index_funs_bg li {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.index_container .index_funs .index_about_learn_more {
+  display: inline-block;
+  width: auto;
+  height: 1.875rem;
+  font-size: 0;
+  position: absolute;
+  bottom: 1.875rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.index_container .index_funs .index_about_learn_more span {
+  color: #000;
+  font-size: 0.875rem;
+  font-style: normal;
+  display: block;
+  float: left;
+  line-height: 1.875rem;
+  transition: all 0.36s ease;
+  font-family: ht;
+}
+.index_container .index_funs .index_about_learn_more div {
+  display: block;
+  width: 0.625rem;
+  height: 0.625rem;
+  position: relative;
+  margin: 0.625rem 0.3125rem;
+  float: left;
+  box-sizing: border-box;
+}
+.index_container .index_funs .index_about_learn_more div:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  transition: all 0.36s ease;
+}
+.index_container .index_funs .index_about_learn_more div:after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  transition: all 0.36s ease;
+}
+.index_container .index_funs .index_about_learn_more:hover span {
+  color: #fff;
+}
+.index_container .index_funs .index_about_learn_more:hover div:before,
+.index_container .index_funs .index_about_learn_more:hover div:after {
+  background-color: #fff;
+}
+.index_container .index_product {
+  width: 100%;
+  height: 60rem;
+  position: relative;
+}
+.index_container .index_product .index_product_top {
+  width: 53.9375rem;
+  height: 27.0625rem;
+  position: absolute;
+  left: 50%;
+  margin-left: -26.96875rem;
+  top: 4.375rem;
+  z-index: 2;
+}
+.index_container .index_product .index_product_top .index_pro_title_white {
+  width: 36.625rem;
+  top: 5.5625rem;
+  left: 50%;
+  margin-left: -18.3125rem;
+  position: absolute;
+}
+.index_container .index_product .index_product_top .index_pro_title_white img {
+  display: block;
+  width: 100%;
+}
+.index_container .index_product .index_product_top .index_pro_tab {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+.index_container .index_product .index_product_top .index_pro_tab .index_pro_title_black {
+  width: 36.625rem;
+  top: 4.375rem;
+  left: 50%;
+  margin-left: -18.3125rem;
+  position: absolute;
+  z-index: 1;
+}
+.index_container .index_product .index_product_top .index_pro_tab .index_pro_title_black img {
+  display: block;
+  width: 100%;
+}
+.index_container .index_product .index_product_top .index_pro_tab .index_pro_tab_ul {
+  width: 100%;
+  height: auto;
+  font-size: 0;
+  text-align: center;
+  bottom: 3.4375rem;
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+.index_container .index_product .index_product_top .index_pro_tab .index_pro_tab_ul li {
+  display: inline-block;
+  padding: 0 1.4375rem;
+  font-size: 0;
+  text-align: center;
+  max-width: 20%;
+  vertical-align: top;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.index_container .index_product .index_product_top .index_pro_tab .index_pro_tab_ul li img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 5.9375rem;
+  height: 5.9375rem;
+}
+.index_container .index_product .index_product_top .index_pro_tab .index_pro_tab_ul li p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  text-align: center;
+  margin-top: 0.9375rem;
+  max-width: 100%;
+  font-family: ht;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.index_container .index_product .index_product_top .index_pro_tab .index_pro_tab_bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  background-color: #fff;
+  transition: all 0.2s ease;
+  transform: scale(0.8);
+  transform-origin: 50% 100%;
+  opacity: 0;
+}
+.index_container .index_product .index_product_top .active {
+  opacity: 1;
+}
+.index_container .index_product .index_product_top:hover .index_pro_tab {
+  opacity: 1;
+  transform: translate(0, -4.375rem);
+  transition: all 0.2s ease;
+  transition-delay: 0.2s;
+}
+.index_container .index_product .index_product_top:hover .index_pro_tab .index_pro_tab_bg {
+  transform: scale(1);
+  opacity: 1;
+  height: 100%;
+}
+.index_container .index_product .index_pro_tab_content {
+  position: absolute;
+  bottom: 8.625rem;
+  transform: translate(-50%, 0);
+  z-index: 2;
+  width: 100%;
+  left: 50%;
+}
+.index_container .index_product .index_pro_tab_content .index_product_list {
+  font-size: 0;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+  height: 18.8125rem;
+}
+.index_container .index_product .index_pro_tab_content .index_product_list li {
+  width: 18.8125rem;
+  display: inline-block;
+  height: 18.8125rem;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.index_container .index_product .index_pro_tab_content .index_product_list li:hover {
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+  position: relative;
+  z-index: 2;
+}
+.index_container .index_product .index_pro_tab_content .index_product_list li img {
+  width: 100%;
+  display: block;
+}
+.index_container .index_product .index_product_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+.index_container .index_product .index_product_bg li {
+  width: 100%;
+  height: 100%;
+}
+.index_container .index_product .index_product_bg li img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.index_container .index_news {
+  background-color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 9.0625rem 0 7.25rem 0;
+  position: relative;
+}
+.index_container .index_news .index_news_title {
+  width: 21.75rem;
+  margin: 0 auto;
+  transition: all 0.16s ease;
+  transform-origin: 50% 100%;
+}
+.index_container .index_news .index_news_title img {
+  display: block;
+}
+.index_container .index_news .index_news_title:hover {
+  transform: scale(1.1);
+}
+.index_container .index_news .index_news_gard {
+  display: flex;
+  width: 75rem;
+  margin: 4.125rem auto 0;
+  background-color: #000;
+  flex-wrap: wrap;
+}
+.index_container .index_news .index_news_gard .left,
+.index_container .index_news .index_news_gard .right {
+  width: 50%;
+  height: 31.25rem;
+}
+.index_container .index_news .index_news_gard .right {
+  display: flex;
+  flex-wrap: wrap;
+}
+.index_container .index_news .index_news_gard .right > div {
+  width: 50%;
+  height: 15.625rem;
+}
+.index_container .index_news .index_news_gard .right > div:hover .gard_bg {
+  opacity: 1;
+}
+.index_container .index_news .index_news_gard a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.index_container .index_news .index_news_gard a img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.index_container .index_news .index_news_gard a .gard_bg {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.index_container .index_news .index_news_gard a .gard_bg .gard_text {
+  width: 18.75rem;
+  height: 15.625rem;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  padding: 1.125rem;
+  box-sizing: border-box;
+}
+.index_container .index_news .index_news_gard a .gard_bg .gard_text .gard_date {
+  font-size: 1.125rem;
+  line-height: 2.375rem;
+  color: #fff;
+  margin-left: 0.875rem;
+  font-family: 'Noto Sans SC';
+  font-weight: bold;
+}
+.index_container .index_news .index_news_gard a .gard_bg .gard_text .gard_date:before,
+.index_container .index_news .index_news_gard a .gard_bg .gard_text .gard_date:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 3rem;
+  background: #fff;
+  position: relative;
+  left: -0.875rem;
+}
+.index_container .index_news .index_news_gard a .gard_bg .gard_text .gard_title {
+  font-size: 1.25rem;
+  color: #fff;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 21;
+  -webkit-box-orient: vertical;
+  margin: 0.75rem 0;
+  line-height: 1.5;
+  font-family: ht;
+}
+.index_container .index_news .index_news_gard a .gard_bg .gard_text .gard_content {
+  font-size: 0.75rem;
+  color: #fff;
+  font-family: ht;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 0.625rem;
+  line-height: 1.5;
+}
+.index_container .index_news .index_news_gard a .gard_bg .gard_text .gard_go {
+  display: block;
+  width: 7rem;
+  height: 1.75rem;
+  font-family: ht;
+  border: solid #fff 1px;
+  text-align: center;
+  color: #fff;
+  line-height: 1.75rem;
+}
+.index_container .index_news .index_news_gard .left:hover .gard_bg {
+  opacity: 1;
+}
+.index_container .index_news .index_news_learn_more {
+  display: inline-block;
+  width: auto;
+  height: 1.875rem;
+  font-size: 0;
+  position: absolute;
+  bottom: 1.875rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.index_container .index_news .index_news_learn_more span {
+  color: #000;
+  font-size: 0.875rem;
+  font-family: ht;
+  font-style: normal;
+  display: block;
+  float: left;
+  line-height: 1.875rem;
+  transition: all 0.36s ease;
+}
+.index_container .index_news .index_news_learn_more div {
+  display: block;
+  width: 0.625rem;
+  height: 0.625rem;
+  position: relative;
+  margin: 0.625rem 0.3125rem;
+  float: left;
+  box-sizing: border-box;
+}
+.index_container .index_news .index_news_learn_more div:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  transition: all 0.36s ease;
+}
+.index_container .index_news .index_news_learn_more div:after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  transition: all 0.36s ease;
+}
+.index_container .index_news .index_news_learn_more:hover span {
+  color: #ffdc2a;
+}
+.index_container .index_news .index_news_learn_more:hover div:before,
+.index_container .index_news .index_news_learn_more:hover div:after {
+  background-color: #ffdc2a;
+}

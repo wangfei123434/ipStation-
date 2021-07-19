@@ -1,0 +1,282 @@
+.journalis_img {
+  width: 100%;
+  margin: 6.3125rem auto 0;
+}
+.journalis_img img {
+  width: 100%;
+  display: block;
+}
+.journalis_content {
+  width: 75rem;
+  margin: 3.125rem auto 0;
+}
+.journalis_content li {
+  border-bottom: 0.0625rem solid #C1C1C1;
+  padding: 3.125rem 0;
+  width: 100%;
+}
+.journalis_content li a {
+  display: flex;
+}
+.journalis_content li a .date {
+  width: 5.9375rem;
+  height: 5.9375rem;
+  border-radius: 0.3125rem;
+  text-align: center;
+  border: solid #C3C3C3 1px;
+  box-sizing: border-box;
+  position: relative;
+  top: -0.625rem;
+  transition: all 0.2s ease;
+}
+.journalis_content li a .date .yearP {
+  color: #C3C3C3;
+  margin-top: 0.9375rem;
+  font-family: ht;
+}
+.journalis_content li a .date .dayP {
+  height: 1.6875rem;
+  font-size: 2.25rem;
+  font-weight: 800;
+  text-align: center;
+  color: #C3C3C3;
+}
+.journalis_content li a .news_text {
+  flex: 1;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 1.25rem;
+}
+.journalis_content li a .news_text .news_pic {
+  width: 16.25rem;
+  height: 11.25rem;
+  overflow: hidden;
+}
+.journalis_content li a .news_text .news_pic img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: all 0.2s ease;
+}
+.journalis_content li a .news_text .news_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-left: 2.125rem;
+}
+.journalis_content li a .news_text .news_info .title {
+  color: #444;
+  font-size: 1.5rem;
+  font-family: 'Noto Sans SC';
+  font-weight: 800;
+}
+.journalis_content li a .news_text .news_info .user,
+.journalis_content li a .news_text .news_info .describe {
+  color: #888;
+  font-size: 0.875rem;
+  font-family: ht;
+}
+.journalis_content li a .news_text .news_info .user span,
+.journalis_content li a .news_text .news_info .describe span {
+  color: #e5472e;
+}
+.journalis_content li a .news_text .news_info .describe {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.5rem;
+  max-width: 33.25rem;
+}
+.journalis_content li a .news_text .news_info .line {
+  width: 3.125rem;
+  height: 0.1875rem;
+  background-color: #E5472E;
+  padding: 0;
+  margin: 1.0625rem 0;
+}
+.journalis_content li a .news_text .news_info p {
+  padding: 0.125rem 0;
+  font-family: ht;
+}
+.journalis_content li a .news_text .learn_more {
+  width: auto / 16rem;
+  height: 1.875rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 0rem;
+}
+.journalis_content li a .news_text .learn_more em {
+  color: #000;
+  font-size: 0.875rem;
+  font-style: normal;
+  display: block;
+  float: left;
+  line-height: 1.875rem;
+  transition: all 0.2s ease;
+  font-family: ht;
+}
+.journalis_content li a .news_text .learn_more span {
+  display: block;
+  width: 0.625rem;
+  height: 0.625rem;
+  position: relative;
+  margin: 0.625rem 0.3125rem;
+  float: left;
+  box-sizing: border-box;
+}
+.journalis_content li a .news_text .learn_more span:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  transition: all 0.36s ease;
+}
+.journalis_content li a .news_text .learn_more span:after {
+  content: "";
+  height: 100%;
+  width: 1px;
+  background: #000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  position: absolute;
+  transition: all 0.36s ease;
+}
+.journalis_content li:hover .date {
+  background-color: #E5472E;
+  border-color: #E5472E;
+}
+.journalis_content li:hover .date .yearP {
+  color: #fff;
+}
+.journalis_content li:hover .date .dayP {
+  color: #fff;
+}
+.journalis_content li:hover .news_pic img {
+  transform: scale(1.1);
+}
+.page_box {
+  width: 100%;
+  text-align: center;
+  margin: 2.1875rem auto 2rem;
+}
+.pager {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.pager a {
+  cursor: pointer;
+  content: "\\20";
+}
+.pager a,
+.pager span {
+  /* 按钮内数字 */
+  width: auto;
+  height: 2.1875rem;
+  border-bottom: 1px solid #fff;
+  margin-left: -1px;
+  color: #8a8a8a;
+  display: inline-block;
+  line-height: 2.1875rem;
+  font-size: 15px;
+  text-decoration: none;
+  margin: 0 10px;
+  padding: 0 3px;
+  vertical-align: top;
+  font-family: ht;
+}
+.pager a:hover,
+.pager span:hover {
+  position: relative;
+  z-index: 1;
+  color: #000;
+  border-color: #000;
+}
+.pager span.current {
+  color: #000;
+  border-color: #000;
+  position: relative;
+  z-index: 1;
+}
+.pager .pg-first,
+.pager .pg-prev,
+.pager .pg-next,
+.pager .pg-last {
+  background: white url(http://static.wanou1.com/website/image/page/page_bg.jpg) 0.5rem 0.4375rem no-repeat;
+  width: 2.5rem;
+  height: 2.1875rem;
+  background-size: 6.25%;
+}
+.pager .pg-first:hover,
+.pager .pg-prev:hover,
+.pager .pg-next:hover,
+.pager .pg-last:hover {
+  background: white url(http://static.wanou1.com/website/image/page/page_bg_hover.jpg) 0.5rem 0.4375rem no-repeat;
+  background-size: 6.25%;
+}
+.pager .pg-prev,
+.pager .pg-prev:hover {
+  background-position: 0.4375rem -1.3125rem;
+}
+.pager .pg-next,
+.pager .pg-next:hover {
+  background-position: -1.3125rem -1.3125rem;
+}
+.pager .pg-last,
+.pager .pg-last:hover {
+  background-position: -1.3125rem 0.4375rem;
+}
+.pager .pg-prev[disabled='true'],
+.pager .pg-prev[disabled='true']:hover {
+  cursor: default;
+  background-image: url(http://static.wanou1.com/website/image/page/page_bg.jpg);
+}
+.pager .pg-next[disabled='true'],
+.pager .pg-next[disabled='true']:hover {
+  cursor: default;
+  background-image: url(http://static.wanou1.com/website/image/page/page_bg.jpg);
+}
+.pager .pg-prev[disabled='true'],
+.pager .pg-next[disabled='true'] {
+  border-color: #eeeeee;
+}
+.pager span.els {
+  border-color: transparent;
+}
+.pagerHtmlWrap {
+  width: 800px;
+  margin: 30px auto;
+}
+.pagerHtmlWrap .cc_cells {
+  width: 100%;
+  height: 35px;
+  padding: 5px 0;
+  border-bottom: 1px #cccccc solid;
+}
+.pagerHtmlWrap .cc_cells a {
+  color: #454545;
+  font-size: 14px;
+  line-height: 35px;
+  text-decoration: none;
+}
+.pagerHtmlWrap .cc_cells a span {
+  display: inline-block;
+  width: 25%;
+  text-align: left;
+  margin: 0;
+}

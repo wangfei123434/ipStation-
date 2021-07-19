@@ -1,0 +1,441 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+	font-size: 0.12rem;
+	overflow-x: hidden;
+	.content{
+		.header_right{
+			position: fixed;
+			right: 10/100rem;
+			margin-top: 17/100rem;
+			margin-right: 20/100rem;
+			z-index: 102;
+			height:  22/100rem;
+			width: 28/100rem;
+			top:0;
+			span{
+				display: block;
+				width: 28/100rem;
+				height: 3/100rem;
+				background-color: #000;
+				position: absolute;
+				left: 0;
+				top:50%;
+				transform: translate(0,-50%);
+				transform-origin: center center;
+				transition: all .2s ease;
+				&:first-child{
+					top:0;
+					transform: translate(0,0%);
+				}
+				&:last-child{
+					top:auto;
+					bottom:0;
+					transform:rotate(0deg) translate(0,0%);
+					transition: all .2s ease;
+				}
+			}
+			
+		}
+		.header_right.active{
+			transform:translate(0,-3/100rem);
+			span{
+				background-color: #fff;
+			}
+			#span1{
+				transform:rotate(45deg) translate(0,0%);
+				top:50%;
+			}
+			#span3{
+				transform:rotate(135deg) translate(0,0%);
+				top:50%;
+				bottom:auto;
+			}
+			#span2{
+				opacity:0;
+			}
+		}
+		width: 100%;
+		position: relative;
+		.header{
+			display: flex;
+			justify-content: space-between;
+			height: 60/100rem;
+			line-height: 60/100rem;
+			position: fixed;
+			background-color: #fff;
+			width: 100%;
+			z-index: 1;
+			top:0;
+			left: 0;
+			.header_left{
+				font-family: PingFang SC;
+				font-size: 15/100rem;
+				margin-left: 20/100rem;
+				a{
+					display: block;
+					color: #000;
+					span{
+						border: solid #000;
+						border-width: 0 1/100rem 1/100rem 0;
+						display: inline-block;
+						padding: 5/100rem;
+						transform: rotate(135deg);
+						-webkit-transform: rotate(135deg);
+					    margin-right: 3/100rem;
+					}
+				}
+			}
+			.header_right{
+				margin-top: 17/100rem;
+				margin-right: 20/100rem;
+				z-index: 9;
+				span{
+					display: block;
+					margin-bottom: 5/100rem;
+					width: 35/100rem;
+					height: 5/100rem;
+					background-color: #000;
+				}
+				.span1{
+					transform: rotate(50deg);
+					transition:0.5s;
+					margin-top: 10/100rem;
+				}
+				.span2{
+					display: none;
+				}
+				.span3{
+					transform: rotate(135deg);
+					transition:0.5s;
+					margin-top: -9/100rem;
+				}
+			}
+		}
+		.content_box{
+			background-color: #f1f1f1;
+			margin-top: 60/100rem;
+			padding: 40/100rem 8/100rem 8/100rem 8/100rem;
+			.advantage_1{
+				width: 100%;
+				height: 200/100rem;
+				// background: url(https://static.wanou1.com/website/image/mobileImage/advantage_bg1.png) no-repeat;
+				// background-size: contain;
+				// background-size: 100% 100%;
+				background-color: #fff;
+				border-radius: 15px;
+				position: relative;
+				.img_box{
+					// height: 120/100rem;
+					width: 130/100rem;
+					position: absolute;
+					top: -50/100rem;
+					left: -10/100rem;
+					img{
+						height: 100%;
+						width: 100%;
+					}
+					
+				}
+				.text{
+					width: 60%;
+					margin-left: 38%;
+					font-size: 10/100rem;
+					// padding-top: 15/100rem;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					.text_item1{
+						margin-bottom: 5/100rem;
+					}
+					h3{
+						width: 70%;
+						border-bottom: 1px solid #e85f49;
+						padding-bottom: 3px;
+					}
+					p{
+						margin-top: 3px;
+					}
+					.text_item2{
+						margin-top: 5/100rem;
+					}
+				}
+			}
+			.advantage_2{
+				width: 100%;
+				height: 360/100rem;
+				font-size: 10/100rem;
+				// background: url(https://static.wanou1.com/website/image/mobileImage/advantage_bg2.png) no-repeat;
+				// background-size: contain;
+				// background-size: 100% 100%;
+				background-color: #fff;
+				border-radius: 15px;
+				margin-top: 40/100rem;
+				position: relative;
+				opacity: 0;
+				.text1,.text2,.text3,.text4,.text5{
+					position: absolute;
+				}
+				.img_box{
+					height: 120/100rem;
+					width: 130/100rem;
+					position: absolute;
+					top: -35/100rem;
+					img{
+						height: 100%;
+						width: 100%;
+					}
+					
+				}
+				.text1{
+					top: 10/100rem;
+					left: 145/100rem;
+					h3{
+						width: 90%;
+						border-bottom: 1px solid #e85f49;
+						padding-bottom: 3px;
+					}
+					p{
+						margin-top: 3px;
+					}
+				}
+				.text2{
+					top: 70/100rem;
+					width: 63%;
+					left: 110/100rem;
+				}
+				.text3{
+					left: 15/100rem;
+					top: 120/100rem;
+					h3{
+						width: 150%;
+						border-bottom: 1px solid #e85f49;
+						padding-bottom: 3px;
+					}
+					p{
+						margin-top: 3px;
+					}
+				}
+				.text4{
+					left: 15/100rem;
+					top: 170/100rem;
+					width: 90%;
+				}
+				.text5{
+					top: 230/100rem;
+					width: 90%;
+					left: 50%;
+					transform: translateX(-50%);
+					h3{
+						width: 35%;
+						border-bottom: 1px solid #e85f49;
+						padding-bottom: 3px;
+					}
+					p{
+						margin-top: 3px;
+					}
+					.text_item{
+						margin-top: 8/100rem;
+					}
+				}
+			}
+			.advantage_3{
+				width: 100%;
+				height: 260/100rem;
+				// background: url(https://static.wanou1.com/website/image/mobileImage/advantage_bg3.png) no-repeat;
+				// background-size: contain;
+				background-color: #fff;
+				border-radius: 15px;
+				margin-top: 60/100rem;
+				opacity: 0;
+				position: relative;
+				.img_box{
+					height: 230/100rem;
+					width: 120/100rem;
+					position: absolute;
+					top: -50/100rem;
+					img{
+						height: 100%;
+						width: 100%;
+					}
+					
+				}
+				.text1{
+					width: 57%;
+					margin-left: 40%;
+					font-size: 10/100rem;
+					padding-top: 10/100rem;
+					.text_item1{
+						margin-bottom: 5/100rem;
+					}
+					h3{
+						width: 70%;
+						border-bottom: 1px solid #e85f49;
+						padding-bottom: 3px;
+					}
+					p{
+						margin-top: 3px;
+					}
+					.text_item2{
+						margin-top: 5/100rem;
+					}
+				}
+				.text2{
+					font-size: 10/100rem;
+					margin-top: 20/100rem;
+					padding: 0 20/100rem;
+					h3{
+						width: 70%;
+						border-bottom: 1px solid #e85f49;
+						padding-bottom: 3px;
+					}
+					p{
+						margin-top: 3px;
+					}
+					ul{
+						width: 100%;
+						display: flex;
+						flex-wrap: wrap;
+						margin-top: 10/100rem;
+						margin-left: 20/100rem;
+						li{
+							width: 50%;
+							margin: 3/100rem 0;
+							list-style: disc;
+						}
+					}
+				}
+			}
+			.advantage_4{
+				width: 100%;
+				height: 260/100rem;
+				// background: url(https://static.wanou1.com/website/image/mobileImage/advantage_bg4.png) no-repeat;
+				// background-size: contain;
+				background-color: #fff;
+				border-radius: 15px;
+				margin-top: 80/100rem;
+				position: relative;
+				font-size: 10/100rem;
+				opacity: 0;
+				.img_box{
+					height: 200/100rem;
+					width: 120/100rem;
+					position: absolute;
+					top: -85/100rem;
+					img{
+						height: 100%;
+						width: 100%;
+					}
+					
+				}
+				.text1{
+					padding-top: 26.5/100rem;
+					margin-left: 15/100rem;
+					h3{
+						width: 55%;
+						border-bottom: 1px solid #e85f49;
+						padding-bottom: 3px;
+						text-align: center;
+					}
+					p{
+						margin-top: 3px;
+					}
+				}
+				
+			}
+		}
+		
+	}
+	.nav{
+		width: 80%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.8);
+		z-index: 2;
+		position: fixed;
+		right: -80%;
+		// left: 375/100rem;
+		top: 0;
+		color: #fff;
+		// display: none;
+		ul{
+			margin-top: 70/100rem;
+			width: 40%;
+			margin-left: 110/100rem;
+			position: relative;
+			li{
+				margin-bottom: 40/100rem;
+				text-align: right;
+				font-size: 12/100rem;
+				a{
+					color: #fff;
+					font-size: 12/100rem;
+				}
+			}
+			.onLine{
+				position: absolute;
+				bottom: 0rem;
+				left: -100/100rem;
+				// display: none;
+				opacity: 0;
+				.tm,.jd{
+					width: 80/100rem;
+					height: 60/100rem;
+					margin-top: 20/100rem;
+					a{
+						display: block;
+						color: #fff;
+						font-size: 10/100rem;
+						img{
+							width: 30/100rem;
+							height: 30/100rem;
+							margin-left: 25/100rem;
+						}
+						p{
+							text-align: center;
+							margin-top: 5/100rem;
+						}
+					}
+				}
+				.xcx{
+					margin-top: 20/100rem;
+					font-size: 10/100rem;
+					img{
+						width: 50/100rem;
+						height: 50/100rem;
+						margin-left: 15/100rem;
+					}
+					p{
+						text-align: center;
+						margin-top: 5/100rem;
+					}
+				}
+			}
+			.line{
+				width: 1px;
+				// height: 180/100rem;
+				background-color: #fff;
+				position: absolute;
+				top: 285/100rem;
+			}
+		}
+		
+	}
+	// 遮罩层
+	.maskLayer{
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		top: 250/100rem;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color:#fff;
+		opacity: 0.7;
+	}
+	
+
+}

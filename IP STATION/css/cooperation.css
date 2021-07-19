@@ -1,0 +1,68 @@
+.cooperation_img {
+  display: block;
+  width: 100%;
+  margin: 6.3125rem auto 0;
+}
+.cooperation_img img {
+  display: block;
+}
+.coop_list {
+  width: 100%;
+  height: auto;
+}
+.coop_list .item {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  align-items: center;
+  padding: 3.375rem 0 4.375rem 8.875rem;
+  background-color: #f6f6f6;
+  overflow: hidden;
+}
+.coop_list .item .left {
+  width: 18.75rem;
+  height: 18.75rem;
+  transform: translate(-100%, 100%);
+  opacity: 0;
+}
+.coop_list .item .right {
+  flex: 1;
+  margin-left: 11.75rem;
+  transform: translate(18.75rem, 100%);
+  opacity: 0;
+}
+.coop_list .item .right h1 {
+  font-size: 3rem;
+  color: #000;
+  line-height: 3.625rem;
+  font-family: 'Noto Sans SC';
+  font-weight: 800;
+}
+.coop_list .item .right h2 {
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: lighter;
+  line-height: 1.25rem;
+  margin-top: 0.5rem;
+  font-family: ht;
+}
+.coop_list .item .right p {
+  font-size: 1rem;
+  color: #7B7B7B;
+  font-weight: lighter;
+  line-height: 1.875rem;
+  margin-top: 1.5rem;
+  min-height: 3rem;
+  font-family: ht;
+}
+.coop_list .item .right h6 {
+  font-size: 1.25rem;
+  color: #000;
+  font-weight: lighter;
+  line-height: 1.5rem;
+  margin-top: 3.75rem;
+  font-family: ht;
+}
+.coop_list .item:nth-child(even) {
+  background-color: #fff;
+}
